@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hakkımızda -- Star Cafe</title>
+    <link rel="stylesheet" type="text/css" href="starcafe.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="img/star.png" class="logo">
+                <ul class="main-nav animate__animated animate__slideInDown" id="check-class">  <!--animate.css-->
+                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Menü</a></li>
+                    <li><a href="#">Galeri</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+                <a href="#" class="icon" onclick="slideshow()"><img src="https://img.icons8.com/cotton/64/000000/menu.png"/></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+        <h1><span class="colorchange">Değişmeyen Lezzet</span>,<br><span>Yenilenen</span> Mekan</h1>
+        <a href="#" class="btn btn-full">Rezervasyon</a>
+        <a href="#" class="btn btn-nav">Daha Fazla Bilgi</a>
+    </div>
+    </header>
+    <!--End Header-->
+
+
+    <script type="text/javascript">
+        function slideshow() {
+            var x = document.getElementById("check-class");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }else {
+                x.style.display = "none";
+            }
+    }
+    </script>
+</body>
+</html>
